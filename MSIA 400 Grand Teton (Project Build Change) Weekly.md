@@ -1,6 +1,6 @@
-MSIA 400 Grand Teton (Project Build Change) Weekly Update
+# MSIA 400 Grand Teton (Project Build Change) Weekly Update
 
-Oct 17 2019
+## Oct 17 2019
 
 This week our team looked at the project description and laid out a tentative schedule. We decided to analyze the datasets in two approaches. We want to first use classical machine learning algorithms in OpenCV to classify the image files, and then take advantage of deep learning methods to potentially build a more powerful classifier. 
 

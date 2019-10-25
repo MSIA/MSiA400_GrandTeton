@@ -1,4 +1,4 @@
-## MSIA 400 Grand Teton (Project Build Change) weekly Update
+## MSIA 400 Grand Teton (Project Build Change) Weekly Update
 ## Oct 24 2019 WEEK 2
 
 This week we setup the remote desktop environement and installed the required packages (OpenCV, etc.) useful for us.

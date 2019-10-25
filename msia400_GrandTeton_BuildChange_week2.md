@@ -5,9 +5,9 @@ This week we were able to setup the remote desktop environement and installed th
 
 We have created two ipynb notebooks this week. The same code can also be found in corresponding py script files.
 
-In the first notebook "[explore_images.ipynb]" (https://nbviewer.jupyter.org/github/MSIA/MSiA400_GrandTeton/blob/master/explore_images.ipynb) we explored the images inside the Go/NoGo folders and did basic tasks like reading images through openCV python package, interpreting it as a numpy ndarray and understanding their different color channels.
+In the first notebook - [explore_images.ipynb](https://nbviewer.jupyter.org/github/MSIA/MSiA400_GrandTeton/blob/master/explore_images.ipynb) we explored the images inside the Go/NoGo folders and did basic tasks like reading images through openCV python package, interpreting it as a numpy ndarray and understanding their different color channels.
 
-In the second notebook "[link_images_csv.ipynb]" (https://nbviewer.jupyter.org/github/MSIA/MSiA400_GrandTeton/blob/master/link_images_csv.ipynb) we explored the "Building_Set_Balanced_10000_Generated_9_MAY_2019.csv" file which has data about the generated images inside the Go/NoGo folders. We were able to link each image file name with the specific row inside the csv file which corresponds to the same image and also verified the same using the labels.
+In the second notebook - [link_images_csv.ipynb](https://nbviewer.jupyter.org/github/MSIA/MSiA400_GrandTeton/blob/master/link_images_csv.ipynb) we explored the "Building_Set_Balanced_10000_Generated_9_MAY_2019.csv" file which has data about the generated images inside the Go/NoGo folders. We were able to link each image file name with the specific row inside the csv file which corresponds to the same image and also verified the same using the labels.
 
 We now face the following questions:
 1. For each generated image, are the features listed inside the csv file enough or we need to generate more features using opencv and other classical computer vision tools. Once we finalize our feature vector we will move forward to the next step of developing a classifier that can predict Go/NoGo from the input feature vector of any image.

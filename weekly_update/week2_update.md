@@ -11,9 +11,8 @@ In the second notebook - [link_images_csv.ipynb](https://nbviewer.jupyter.org/gi
 
 In the third notebook - [logistic.py](https://github.com/MSIA/MSiA400_GrandTeton/blob/master/logistic.py) we built logistic regression classifier based on features contained in csv file, and further checked the accuracy of this classifier on test set.
 
-We now face the following questions:
-1. For each generated image, are the features listed inside the csv file enough or do we need to generate more features using OpenCV and other classical computer vision tools? 
+In the coming week, we will attempt the follwing tasks:
 
-Once we finalize our feature vector we will move forward to the next step of developing a classifier that can predict Go/NoGo from the input feature vector of any image.
+1. For each generated image, try to generate more features for model fitting
 
-2. In order to test our model performance on real world data, we will need labelled real world images. Currently the real images provided to us are not labelled. So are we supposed to evaluate our model based on other techniques?
+2. Once we finalize our feature vector we will move forward to the next step of developing a classifier that can predict Go/NoGo from the input feature vector of any image.

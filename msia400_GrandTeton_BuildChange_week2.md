@@ -14,4 +14,4 @@ We now face the following questions:
 
 Once we finalize our feature vector we will move forward to the next step of developing a classifier that can predict Go/NoGo from the input feature vector of any image.
 
-2. In order to test our model performance on real world data, we will need labelled real world images. Currently the dataset provided to us is not labelled. So are we supposed to evaluate our model based on other techniques?
+2. In order to test our model performance on real world data, we will need labelled real world images. Currently the real images provided to us are not labelled. So are we supposed to evaluate our model based on other techniques?

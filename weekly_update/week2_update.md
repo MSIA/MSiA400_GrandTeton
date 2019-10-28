@@ -15,4 +15,6 @@ In the coming week, we will attempt the follwing tasks:
 
 1. For each generated image, try to generate more features for model fitting
 
+WHAT FEATURES DO YOU HAVE IN MIND? DON'T CREATE FEATURES BY HAVING THE SIMULATED IMAGES IN MIND, BUT RATHER THE TRUE IMAGES. 
+
 2. Once we finalize our feature vector we will move forward to the next step of developing a classifier that can predict Go/NoGo from the input feature vector of any image.

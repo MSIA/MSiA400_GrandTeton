@@ -2,7 +2,18 @@
 
 ## Nov 6 2019 WEEK 4
 
-This week we extracted feautures that can be easily detected through OpenCV packages and show the most significance in previous logistic regression model.
+This week we extracted feautures that could be easily detected through OpenCV packages and show the most significance in previous logistic regression model, from the generated images. Based on these features, we fit a logistic regression model to test the model's performance through predicting the GO/NoGO results.
+
+In the notebook - [logistic regression.ipynb](https://github.com/MSIA/MSiA400_GrandTeton/blob/master/logistic%20regression.ipynb) We defined several functions to perform feature extraction:
+
+1. count_openings() to extract the contours of quadrilaterals which represent the number of openings (e.g. windows, doors);
+2. fraction_width() to calculate the average percentage of openings on each floor;
+3. count_level() to detect the horizonal lines which represent the number of levels (floors);
+
+Then we fit our logistic regression model with these three features above, split train and test size by 7:3, and reached accuracy of 0.8.
+
+In the following week, we will continue to work on extracting more features from the generated images and improve our current model by comparing the accuracy.
+
 
 
 
@@ -46,6 +57,7 @@ In the coming week, we will attempt the follwing tasks:
 WHAT FEATURES DO YOU HAVE IN MIND? DON'T CREATE FEATURES BY HAVING THE SIMULATED IMAGES IN MIND, BUT RATHER THE TRUE IMAGES. 
 
 2. Once we finalize our feature vector we will move forward to the next step of developing a classifier that can predict Go/NoGo from the input feature vector of any image.
+
 
 
 

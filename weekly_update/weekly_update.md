@@ -4,7 +4,7 @@
 
 This week we extracted feautures that could be easily detected through OpenCV packages and show the most significance in previous logistic regression model, from the generated images. Based on these features, we fit a logistic regression model to test the model's performance through predicting the GO/NoGO results.
 
-In the notebook - [logistic regression.ipynb](https://github.com/MSIA/MSiA400_GrandTeton/blob/master/logistic%20regression.ipynb) We defined several functions to perform feature extraction:
+In the notebook - [LogisticModel_ThreeFeature.ipynb](https://github.com/MSIA/MSiA400_GrandTeton/blob/master/LogisticModel_ThreeFeature.ipynb) We defined several functions to perform feature extraction:
 
 1. count_openings() to extract the contours of quadrilaterals which represent the number of openings (e.g. windows, doors);
 2. fraction_width() to calculate the average percentage of openings on each floor;

@@ -10,12 +10,13 @@ In the notebook - [LogisticModel_ThreeFeature.ipynb](https://github.com/MSIA/MSi
 2. fraction_width() to calculate the average percentage of openings on each floor;
 3. count_level() to detect the horizonal lines which represent the number of levels (floors);
 
+YOU SHOULD ALSO CONSIDER HAAR FEATURES, HOG (Histogram of Oriented Gradients).
+
 Then we fit our logistic regression model with these three features above, split train and test size by 7:3, and reached accuracy of 0.8.
 
 In the following week, we will continue to work on extracting more features from the generated images and improve our current model by comparing the accuracy.
 
-
-
+HOW DOES YOUR MODEL PERFORM ON REAL WORLD IMAGES? 
 
 ## Nov 1 2019 WEEK 3
 

@@ -26,7 +26,8 @@ We think there might be a need to change the model now (maybe SVM or Random Fore
 To have a detailed look at the code and results, please look at the notebook:
 https://github.com/MSIA/MSiA400_GrandTeton/blob/master/LogisticModel_FeatureClass.ipynb
 
-Then we tested this model on real images, and found the results are not consistent with our expectation. For example, the count_level() fails to detect non-horizonal lines which represent the number of floors, and the count_openinings() returns more contours comparing with the actual image.
+Then we tested this model on real images, and found the results are not consistent with our expectation. For example, the count_level() fails to detect non-horizonal lines which represent the number of floors, and the count_openinings() returns more contours comparing with the actual image. Please look at this notebook for our testing on real image:
+https://github.com/MSIA/MSiA400_GrandTeton/blob/master/test_real_image.ipynb
 
 In the next week, we will try implement haar features, HOG, or other approaches to get better results.
 

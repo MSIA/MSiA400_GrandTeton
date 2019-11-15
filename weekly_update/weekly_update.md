@@ -23,7 +23,7 @@ We tried to improve the model performance using the following steps:
 
 We think there might be a need to change the model now (maybe SVM or Random Forest).
 
-To have a detailed look at the code and results: please look at the notebook:
+To have a detailed look at the code and results, please look at the notebook:
 https://github.com/MSIA/MSiA400_GrandTeton/blob/master/LogisticModel_FeatureClass.ipynb
 
 Then we tested this model on real images, and found the results are not consistent with our expectation. For example, the count_level() fails to detect non-horizonal lines which represent the number of floors, and the count_openinings() returns more contours comparing with the actual image.

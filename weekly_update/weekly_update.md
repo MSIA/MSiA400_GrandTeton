@@ -4,7 +4,7 @@ This week we implemented more features to check whether the accuracy of model im
 
 Last week we only had 3 features, namely: number of floors, number of openings and the fraction width of openings for each building.
 
-This we defined 5 more functions to perform feature extraction. Now we have the following 8 features:
+This week we defined 5 more functions to perform feature extraction. Now we have the following 8 features:
 1. Number of floors in each building
 2. Number of openings (windows/doors etc.)
 3. The average fraction width of openings for each building (excluding vertically overlapping openings)

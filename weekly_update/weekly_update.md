@@ -2,11 +2,27 @@
 ## Nov 14 2019 WEEK 5
 This week we implemented more features to check whether the accuracy of model improves, and tested how our model perform on real images.
 
-We defined two more functions to perform feature extraction:
-1. The average percent width of openings for each building (average of percent width per floor);
-2. The percent height of openings for each building.
+Last week we only had 3 features, namely: number of floors, number of openings and the fraction width of openings for each building.
 
-We fit our logistic regreesion with all 5 features we have, and reached accuracy of xxx. 
+This we defined 5 more functions to perform feature extraction:
+1. Number of floors in each building
+2. Number of openings (windows/doors etc.)
+3. The average fraction width of openings for each building (excluding vertically overlapping openings)
+4. The average fraction width of openings for each building (average of fraction width per floor)
+5. The average fraction height of openings for each building (excluding horizontally overlapping openings)
+6. The sum of heights of openings for each building divided by the total height of each building
+7. The image width in number of pixels
+8. The image height in number of pixels
+
+We fit our logistic regreesion with all 8 features we have, and didn't see a significant improvement in our model accuracy (still 79.66%).
+
+We tried to improve the model performance using the following steps:
+1. Class weights for class imbalance (3370 Go and 5001 NoGo)
+2. Normalizing the features to a mean of 0 and standard deviation of 1
+3. Tuning the logistic regression penalty hyperparameters across 'L1' and 'L2' loss penalties and across different values of C using GridSearchCV and 5 fold cross-validation.
+
+We think there might be a need to change the model now (maybe SVM or Random Forest).
+
 Then we tested this model on real images, and found the results are not consistent with our expectation. For example, the count_level() fails to detect non-horizonal lines which represent the number of floors, and the count_openinings() returns more contours comparing with the actual image.
 
 In the next week, we will try implement haar features, HOG, or other approaches to get better results.

@@ -1,4 +1,18 @@
 # MSIA 400 Grand Teton (Project Build Change) weekly Update
+## Nov 14 2019 WEEK 5
+This week we implemented more features to check whether the accuracy of model improves, and tested how our model perform on real images.
+
+We defined two more functions to perform feature extraction:
+1. The average percent width of openings for each building (average of percent width per floor);
+2. The percent height of openings for each building.
+
+We fit our logistic regreesion with all 5 features we have, and reached accuracy of xxx. 
+Then we tested this model on real images, and found the results are not consistent with our expectation. For example, the count_level() fails to detect non-horizonal lines which represent the number of floors, and the count_openinings() returns more contours comparing with the actual image.
+
+In the next week, we will try implement haar features, HOG, or other approaches to get better results.
+
+
+
 
 ## Nov 6 2019 WEEK 4
 
@@ -17,6 +31,9 @@ Then we fit our logistic regression model with these three features above, split
 In the following week, we will continue to work on extracting more features from the generated images and improve our current model by comparing the accuracy.
 
 HOW DOES YOUR MODEL PERFORM ON REAL WORLD IMAGES? 
+
+
+
 
 ## Nov 1 2019 WEEK 3
 

@@ -17,11 +17,14 @@ This we defined 5 more functions to perform feature extraction:
 We fit our logistic regreesion with all 8 features we have, and didn't see a significant improvement in our model accuracy (still 79.66%).
 
 We tried to improve the model performance using the following steps:
-1. Class weights for class imbalance (3370 Go and 5001 NoGo)
+1. Implementing class weights for class imbalance (3370 Go and 5001 NoGo)
 2. Normalizing the features to a mean of 0 and standard deviation of 1
 3. Tuning the logistic regression penalty hyperparameters across 'L1' and 'L2' loss penalties and across different values of C using GridSearchCV and 5 fold cross-validation.
 
 We think there might be a need to change the model now (maybe SVM or Random Forest).
+
+To have a detailed look at the code and results: please look at the notebook:
+https://github.com/MSIA/MSiA400_GrandTeton/blob/master/LogisticModel_FeatureClass.ipynb
 
 Then we tested this model on real images, and found the results are not consistent with our expectation. For example, the count_level() fails to detect non-horizonal lines which represent the number of floors, and the count_openinings() returns more contours comparing with the actual image.
 

@@ -5,7 +5,7 @@ This week we used several measures to address to problem of feature extraction f
 1. We resize the real images since most of them have large sizes. The extra sizes make testing slow don't add too much useful information for feature extraction. 
 
 2. We tried SKImage and found that it detects line better than OpenCV since it has less constraints on how we threshold the image. We found the real images usually have many noises, and when used OpenCV for line detection, the lines are usually detached into dots that are not connected. 
-https://github.com/MSIA/MSiA400_GrandTeton/blob/master/line_detection_new.py
+[line_detection_new.py](https://github.com/MSIA/MSiA400_GrandTeton/blob/master/line_detection_new.py)
 
 3. We used Otsu's thresholding for all images.
 

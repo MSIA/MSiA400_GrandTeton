@@ -11,10 +11,15 @@ This week we used several measures to address the problem of feature extraction 
 
 4. We are in the process of writing script to turn the real images into the style of the generated images using Neural Style Transfer, which could potentially make the feature extraction functions work more properly.
 
+NST IS A GREAT IDEA. IMPLEMENT FEATURE EXTRACTION IN PARALLEL; OUR CLUSTER HAS MANY CORES THAT WILL SIGNIFICANTLY SPEED UP FEATURE EXTRACTION. 
+
 ## Nov 14 2019 WEEK 5
 This week we implemented more features to check whether the accuracy of model improves, and tested how our model performs on real images.
 
 Last week we only had 3 features, namely: number of floors, number of openings and the fraction width of openings for each building.
+
+THESE CANNOT BE FEATURES UNLESS YOU HAVE AN ALGORITHM THAT EXTRACTS THEM FROM IMAGES. 
+KEEP IN MIND THAT YOUR INPUT IS ONLY AN IMAGE. 
 
 This week we defined 5 more functions to perform feature extraction. Now we have the following 8 features:
 1. Number of floors in each building
@@ -26,12 +31,16 @@ This week we defined 5 more functions to perform feature extraction. Now we have
 7. The image width in number of pixels
 8. The image height in number of pixels
 
+I DON'T GET IT. YOU CANNOT USE THESE FEATURES UNLESS YOU HAVE AN ALGORITHM THAT EXTRACTS THEM FROM IMAGES AUTOMATICALLY. 
+
 We tried to improve the model performance using the following steps:
 1. Implementing class weights for class imbalance (3370 Go and 5001 NoGo)
 2. Normalizing the features to a mean of 0 and standard deviation of 1
 3. Tuning the logistic regression penalty hyperparameters across 'L1' and 'L2' loss penalties and across different values of C using GridSearchCV and 5 fold cross-validation.
 
 We fit our logistic regreesion with all 8 features we have, and didn't see a significant improvement in our model accuracy (still at 79.66%).
+
+TRY LIGHTGBM AND XGBOOST. 
 
 We think there might be a need to change the model now (maybe SVM or Random Forest).
 
@@ -43,8 +52,7 @@ https://github.com/MSIA/MSiA400_GrandTeton/blob/master/test_real_image.ipynb
 
 In the next week, we will try implement haar features, HOG, or other approaches to get better results.
 
-
-
+THESE ARE 'ALLOWABLE' FEATURES. 
 
 ## Nov 6 2019 WEEK 4
 

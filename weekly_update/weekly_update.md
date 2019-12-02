@@ -1,4 +1,21 @@
 # MSIA 400 Grand Teton (Project Build Change) weekly Update
+
+## Dec 1 2019 WEEK 7
+This week we made progress in feature extraction on real images and also in improving the classification (Go/NoGo) model performance. 
+
+We implemented the following things for extracting features like number of openings (windows/doors) in a real image:
+
+1. We used Bilateral Filtering technique in order to smoothen and denoise the real images while also keeping the edges inside the image intact.
+2. We used Adaptive thresholding to rule out discrepencies caused by shadow gradients in images.
+3. We used other criteria to filter out detected contours including percentage area of contour, convexity of contour, proximity of contour to image borders, etc.
+
+We also improved the accuracy of the classifier by changing the model from logistic regression to XGBOOST. We had previously fit a logistic regression model on the features extracted from images, and had obtained an accuracy of 79.66%. After fitting XGBOOST, we got an accuracy of 85.78%. We also analyzed the importance of the features according using their F-scores.
+
+### Important Clarification:
+We aren't using (nor did we ever use) any of the information provided in the csv about the generated images, we are extracting all features from the images only by using OpenCV and other packages.
+
+The following image summarizes our progress on real images and compares it with generated images:
+
 ## Nov 21 2019 WEEK 6
 This week we used several measures to address the problem of feature extraction functions not working properly on the real images:
 

@@ -15,6 +15,9 @@ We also improved the accuracy of the classifier by changing the model from logis
 We aren't using (nor did we ever use) any of the information provided in the csv about the generated images, we are extracting all features from the images only by using OpenCV and other packages.
 
 The following image summarizes our progress on real images and compares it with generated images:
+![Image of Generated](https://github.com/MSIA/MSiA400_GrandTeton/blob/master/generated_img_process.png)
+![Image of Generated](https://github.com/MSIA/MSiA400_GrandTeton/blob/master/real_img_process.png)
+![Image of Generated](https://github.com/MSIA/MSiA400_GrandTeton/blob/master/other%20examples.png)
 
 ## Nov 21 2019 WEEK 6
 This week we used several measures to address the problem of feature extraction functions not working properly on the real images:

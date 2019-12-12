@@ -24,5 +24,6 @@ Directory Structure:
 │                                       # manually generated ground truth labels of real images 
 ├── Readme.md                           # this readme file
 ├── explore_images_generated.ipynb      # notebook for initial explore of generated images
-├── feature_testing_generated.ipynb     # notebook for initial feature testing of generated images
+├── feature_testing_generated.ipynb     # notebook for initial feature testing on generated images
+├── feature_testing_real.ipynb          # notebook for initial feature testing on real images
 └── ...

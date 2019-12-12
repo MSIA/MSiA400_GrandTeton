@@ -9,12 +9,19 @@ Directory Structure:
 │   ├── ...
 ├── weekly update                       # folder containing weekly_update.md file
 │   ├── ...
-├── Feature_Extractor_generated.py      # python file that has feature extractor class that contains functions that extract feautres like number of floors, number of windows etc. from generated images of houses 
-├── Feature_Extractor_real.py           # python file that has feature extractor class that contains functions that extract feautres like number of floors, number of windows etc. from real images of houses 
+├── Feature_Extractor_generated.py      # python file that has feature extractor class that contains functions 
+│                                       # that extract feautres like number of floors, number of windows etc. 
+│                                       # from generated images of houses 
+├── Feature_Extractor_real.py           # python file that has feature extractor class that contains functions 
+│                                       # that extract feautres like number of floors, number of windows etc. 
+│                                       # from real images of houses 
 ├── link_images_csv.ipynb               # notebook for linking generated images with the given data csv file
-├── LogReg_generated.ipynb              # notebook for running logistic regression model on generated images and giving classification preformance metrics
-├── XGBoost_generated.ipynb             # notebook for running XGBoost model on generated images and comparing with logistic regression and analyzing feature importance
-├── XGBoost_generated.ipynb             # notebook for running XGBoost model on real images and comparing with manually generated ground truth labels of real images 
+├── LogReg_generated.ipynb              # notebook for running logistic regression model on generated images and 
+│                                       # giving classification preformance metrics
+├── XGBoost_generated.ipynb             # notebook for running XGBoost model on generated images and comparing 
+│                                       # with logistic regression and analyzing feature importance
+├── XGBoost_generated.ipynb             # notebook for running XGBoost model on real images and comparing with 
+│                                       # manually generated ground truth labels of real images 
 ├── Readme.md                           # this readme file
 ├── explore_images_generated.ipynb      # notebook for initial explore of generated images
 ├── feature_testing_generated.ipynb     # notebook for initial feature testing of generated images

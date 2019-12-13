@@ -15,15 +15,17 @@ Directory Structure:
 ├── Feature_Extractor_real.py           # python file that has feature extractor class that contains functions 
 │                                       # that extract feautres like number of floors, number of windows etc. 
 │                                       # from real images of houses 
-├── link_images_csv.ipynb               # notebook for linking generated images with the given data csv file
 ├── LogReg_generated.ipynb              # notebook for running logistic regression model on generated images and 
 │                                       # giving classification preformance metrics
+├── Readme.md                           # this readme file
 ├── XGBoost_generated.ipynb             # notebook for running XGBoost model on generated images and comparing 
 │                                       # with logistic regression and analyzing feature importance
 ├── XGBoost_generated.ipynb             # notebook for running XGBoost model on real images and comparing with 
 │                                       # manually generated ground truth labels of real images 
-├── Readme.md                           # this readme file
 ├── explore_images_generated.ipynb      # notebook for initial explore of generated images
 ├── feature_testing_generated.ipynb     # notebook for initial feature testing on generated images
 ├── feature_testing_real.ipynb          # notebook for initial feature testing on real images
+├── features_real.csv                   # features of the real images extracted through classical computer vision
+├── labels.csv                          # labels of the real images generated manually by humans
+├── link_images_csv.ipynb               # notebook for linking generated images with the given data csv file
 └── ...
